@@ -1,0 +1,135 @@
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  background-attachment: fixed;
+  
+}
+
+#extra {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  display: none;
+  text-align: center;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  transition: 2s;
+
+}
+#extra li {
+  list-style-type: none;
+  font-size: 2rem;
+  color: #cccccc;
+  padding: 2%;
+  transition: 2s;
+}
+.headText,
+#about,
+#para,
+#footer {
+  color: rgb(146, 255, 57);
+}
+
+.headText {
+  position: relative;
+  letter-spacing: 0.5rem;
+  /* margin-top: 2%; */
+  margin-left: 5%;
+}
+#about {
+  position: relative;
+  letter-spacing: 0.5rem;
+  margin-top: 2%;
+  margin-left: 5%;
+  
+}
+#para {
+  /* letter-spacing: 2px; */
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 1.2em;
+  position: relative;
+}
+#footer {
+  font-size: 0.7rem;
+  letter-spacing: 2.5px;
+  position: relative;
+  /* left:40%; */
+  margin-top: 20%;
+  margin-left: 40%;
+}
+
+.overlay {
+height: 100vh;
+width: 0;
+position: fixed;
+z-index: 1;
+background-color: rgb(0, 103, 213);
+overflow-x: hidden;
+transition: 1s;
+left: 50%;
+top: 50%;
+
+transform: translate(-50%, -50%);
+}
+
+.overlay-content {
+
+animation: movingTopToBottom 5s;
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+.overlay a {
+animation: movingTopToBottom 3s;
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #48fd00;
+display: block;
+transition: 0.3s;
+}
+
+@keyframes movingTopToBottom {
+  0% {
+    top: -15px;
+  }
+  95% {
+    top: 100px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+.overlay a:hover,.overlay a:focus {
+color: #000000;
+}
+
+.content {
+padding: 30px, 50px;
+line-height: 1.9;
+width: 50%;
+margin-left: 10%;
+text-align: justify;
+}
+
+.menu {
+font-weight: bold;
+font-size: 50px;
+}
